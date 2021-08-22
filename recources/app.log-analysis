@@ -1,0 +1,76 @@
+INFO  - 2021-04-24 09:06:09.422; com.dinusha.soft.AppStart; Stating Cluster Resource Monitor APP.
+DEBUG - 2021-04-24 09:06:17.422; com.dinusha.soft.websocket.WebSocketConfig; Registering Web Socket endpoint : /v1/web-socket-endpoint
+DEBUG - 2021-04-24 09:06:35.827; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:36.646; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:37.465; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:38.287; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:39.097; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:39.903; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:40.714; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:41.095; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+INFO  - 2021-04-24 09:06:41.539; com.dinusha.soft.websocket.SocketTextHandler; Session closed. Session ID : 0c4cbb78-0389-f016-2950-25fe8e519321
+DEBUG - 2021-04-24 09:06:46.012; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:46.835; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:47.640; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:48.456; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:49.265; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:50.071; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:50.874; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:51.695; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:52.516; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:53.377; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:54.199; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:55.013; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:55.840; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:56.646; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:57.458; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:58.267; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:59.129; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:06:59.995; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:00.816; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:01.626; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:02.566; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:03.381; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:04.189; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {}
+DEBUG - 2021-04-24 09:07:04.710; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"0","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:04.994; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=0}
+DEBUG - 2021-04-24 09:07:05.813; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"70","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:05.818; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=0}
+DEBUG - 2021-04-24 09:07:06.643; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=70}
+DEBUG - 2021-04-24 09:07:06.873; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"46","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:07.456; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=46}
+DEBUG - 2021-04-24 09:07:07.912; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"23","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:08.271; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=23}
+DEBUG - 2021-04-24 09:07:08.943; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"26","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:09.088; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=26}
+DEBUG - 2021-04-24 09:07:09.901; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=26}
+DEBUG - 2021-04-24 09:07:09.983; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"14","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:10.710; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=14}
+DEBUG - 2021-04-24 09:07:11.018; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"15","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:11.518; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=15}
+DEBUG - 2021-04-24 09:07:12.048; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"14","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:12.330; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=14}
+DEBUG - 2021-04-24 09:07:13.084; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"21","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:13.145; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=21}
+DEBUG - 2021-04-24 09:07:13.954; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=21}
+DEBUG - 2021-04-24 09:07:14.137; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"13","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:14.770; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=13}
+DEBUG - 2021-04-24 09:07:15.200; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"26","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:15.577; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=26}
+DEBUG - 2021-04-24 09:07:16.284; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"45","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:16.407; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=45}
+DEBUG - 2021-04-24 09:07:17.234; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=45}
+DEBUG - 2021-04-24 09:07:17.367; com.dinusha.soft.controller.ResourceController; Post call : /v1/cpu : {"cpu":"81","instance":"Production Server 1"}
+DEBUG - 2021-04-24 09:07:18.041; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:18.853; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:19.665; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:20.469; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:21.276; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+ERROR - 2021-04-24 09:07:22.086; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+ERROR - 2021-04-24 09:07:22.898; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+ERROR - 2021-04-24 09:07:23.708; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:24.521; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:25.332; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:26.133; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:26.958; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
+DEBUG - 2021-04-24 09:07:27.772; com.dinusha.soft.websocket.SocketTextHandler; WebSocket | Sending payload to frontend : {Production Server 1=81}
