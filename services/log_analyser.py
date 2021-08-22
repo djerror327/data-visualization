@@ -19,15 +19,15 @@ def create_chart():
     for info in info_type:
         y_info.append(info[0])
         x_info.append(info[1])
-    # print(x_error)
-    # print(y_error)
     plt.plot(x_error, y_error)
     plt.plot(x_info, y_info)
     # plt.plot(x_debug, y_debug)
     plt.xlabel('Log type by time')
     plt.ylabel('Count')
     plt.title('Log Analysis')
-    plt.show()
+    # plt.show()
+
+    return x_error, y_error, x_info, y_info
 
 
 def get_categorized_types():
@@ -36,7 +36,6 @@ def get_categorized_types():
         data_set = []
         for line in file:
             data_set.append(line[0:27])
-
         for data in data_set:
             count = 0
             for data2 in data_set:
@@ -44,12 +43,20 @@ def get_categorized_types():
                     count += 1
                     # grouped_data.add([count, data[0:27]])
             grouped_data.append([count, data[0:27]])
-        print(grouped_data)
+        # print(grouped_data)
     # filter DEBUG, ERROR, INFO
     error_type = []
     debug_type = []
     info_type = []
-    for log_type in grouped_data:
+
+    # remove duplicates
+    distinct_grouped_data = []
+    for i in grouped_data:
+        if i not in distinct_grouped_data:
+            distinct_grouped_data.append(i)
+    # print(distinct_grouped_data)
+
+    for log_type in distinct_grouped_data:
         if (log_type[1])[0:5] == 'DEBUG':
             debug_type.append(log_type)
         elif (log_type[1])[0:5] == 'ERROR':
@@ -59,14 +66,12 @@ def get_categorized_types():
     return error_type, debug_type, info_type
 
 
-create_chart()
-# print(errorType)
-# print(debugType)
-# print(infoType)
-# print(dataSet)
+def get_chart_data():
+    x_error, y_error, x_info, y_info = create_chart()
+    data = {'x_error': [x_error, y_error], 'x_info': [x_info, y_info]}
+    print(data)
+    # data.append(x_info, y_info)
+    return data
 
-# plt.plot(x, y)
-# plt.xlabel('Log type')
-# plt.ylabel('Time')
-# plt.title('Log Analysis')
-# plt.show()
+
+get_chart_data()
