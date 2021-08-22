@@ -2,23 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>My Chart.js Chart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>My Chart.js Chart</title>
 </head>
 
 <body>
 <div id="chartContainer" class="container">
-    <div id="chartType">
+  <div id="chartType">
 
-    </div>
-    <canvas id="myChart"></canvas>
+  </div>
+  <canvas id="myChart"></canvas>
 </div>
 
 <script>
+
+    let error_x = []
+    let error_Y = []
+    console.log("get url data")
+    fetch("/log_chart")
+      .then((resp) =>
+        resp.clone().json()
+      ).then((data) => {
+        // console.log(data.x_error)
+        let errorType = data.x_error[0];
+        errorType.forEach((errorDate, index) => {
+          // console.log(errorDate)
+          error_x[index] = errorDate
+        });
+
+        let errorCounts = data.x_error[1];
+        let val = 0;
+        errorCounts.forEach((count, index) => {
+          // console.log(count)
+          error_Y[index] = count
+          //add 0 to th y axis
+          val += index + 1;
+          error_Y[val] = 0
+
+          console.log(val)
+        });
+      }).then(e => drowChart('bar'))
+
+
+
+
     const chartTypes = ['bar', 'horizontalBar', 'pie', 'line', 'doughnut', 'radar', 'polarArea']
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -78,43 +109,19 @@
       let massPopChart = new Chart(canversChart, {
         type: type, // bar, horizontalBar, pie, line, doughnut, radar, polarArea
         data: {
-          labels: names,
+          labels: error_x,
           datasets: [{
-            label: 'Population',
-            data: [
-              617594,
-              181045,
-              153060,
-              106519,
-              105162,
-              95072
+            label: 'ERROR Count by date',
+            data: error_Y,
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.6)',
+              'rgba(54, 162, 235, 0.6)',
+              'rgba(255, 206, 86, 0.6)',
+              'rgba(75, 192, 192, 0.6)',
+              'rgba(153, 102, 255, 0.6)',
+              'rgba(255, 159, 64, 0.6)',
+              'rgba(255, 99, 132, 0.6)'
             ],
-            backgroundColor: 'rgba(255, 99, 132, 0.6)',
-            // backgroundColor: [
-            //   'rgba(255, 99, 132, 0.6)',
-            //   'rgba(54, 162, 235, 0.6)',
-            //   'rgba(255, 206, 86, 0.6)',
-            //   'rgba(75, 192, 192, 0.6)',
-            //   'rgba(153, 102, 255, 0.6)',
-            //   'rgba(255, 159, 64, 0.6)',
-            //   'rgba(255, 99, 132, 0.6)'
-            // ],
-            borderWidth: 1,
-            borderColor: '#777',
-            hoverBorderWidth: 3,
-            hoverBorderColor: '#000'
-          },
-          {
-            label: 'Inflation',
-            data: [
-              61000,
-              132123,
-              453322,
-              243322,
-              323223,
-              45454
-            ],
-            backgroundColor: 'rgba(153, 102, 255, 0.6)',
             borderWidth: 1,
             borderColor: '#777',
             hoverBorderWidth: 3,
@@ -150,6 +157,7 @@
         }
       });
     }
+
 
 
 </script>
